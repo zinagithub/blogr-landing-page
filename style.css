@@ -201,7 +201,8 @@ svg {
 /*Styling part 1*/
 .container-part1,
 .container-part2,
-.container-part3 {
+.container-part3,
+.container-footer {
   display: grid;
   justify-content: center;
   justify-items: center;
@@ -225,4 +226,33 @@ main section p {
 .container-part2 {
   background-color: var(--clr-primary-900);
   color: var(--clr-neutral-100);
+}
+
+/*secondary navigation*/
+.container-footer {
+  padding: 2rem;
+}
+
+.secondary-navigation .dropdown .dropbtn {
+  font-size: var(--fs-500);
+  border: none;
+  outline: none;
+  color: var(--clr-neutral-100);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.secondary-navigation .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem
+}
+
+.dropdown-content a {
+  text-decoration: none;
+  text-align: center;
+  color: var(--clr-neutral-400);
 }
