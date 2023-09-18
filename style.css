@@ -208,6 +208,10 @@ svg {
   justify-items: center;
 }
 
+.container-part1 {
+  margin-bottom: 10rem;
+}
+
 .ff-h2 {
   font-size: var(--fs-700);
   font-weight: var(--fw-500);
@@ -223,11 +227,42 @@ main section p {
   word-spacing: 6px;
 }
 
-.container-part2 {
+.body-part2 {
+  background-image: url(images/bg-pattern-circles.svg);
   background-color: var(--clr-primary-900);
+  background-position-x: -200px;
+  background-position-y: -600px;
+  background-repeat: no-repeat;
+}
+
+.bg-phones {
+  margin-top: -10rem;
+}
+
+.part2-content {
+  margin-top: -4rem;
   color: var(--clr-neutral-100);
 }
 
+/*
+.bg-phones {
+   position: relative;
+}
+
+.bg-phones img {
+  position: absolute;
+  top: 0;
+
+}
+
+.bg-phones img:first-child {
+  z-index: 2;
+}
+
+.bg-phones img:last-child {
+  z-index: 1;
+}
+*/
 /*secondary navigation*/
 .container-footer {
   padding: 2rem;
