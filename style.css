@@ -144,6 +144,12 @@ svg {
 
 .heading-container {
   display: grid;
+  /*background-color: var(--clr-primary-200);*/
+  background-image: url("/images/bg-pattern-intro-mobile.svg"),
+    var(--bg-gradient-primary);
+  /*background-color: var(--bg-gradient-primary);*/
+  background-repeat: no-repeat;
+  background-position: 30% 43%;
 }
 
 .header-titles {
@@ -244,25 +250,7 @@ main section p {
   color: var(--clr-neutral-100);
 }
 
-/*
-.bg-phones {
-   position: relative;
-}
 
-.bg-phones img {
-  position: absolute;
-  top: 0;
-
-}
-
-.bg-phones img:first-child {
-  z-index: 2;
-}
-
-.bg-phones img:last-child {
-  z-index: 1;
-}
-*/
 /*secondary navigation*/
 .container-footer {
   padding: 2rem;
