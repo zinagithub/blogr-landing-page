@@ -101,6 +101,7 @@ svg {
 /*utility classes */
 
 .grid-container {
+
   display: grid;
   row-gap: 2rem;
 }
@@ -150,6 +151,14 @@ svg {
     var(--bg-gradient-primary);
   background-repeat: no-repeat;
   background-position: 36% 46%;
+}
+
+@media (min-width: 50em) {
+  .heading-container {
+    background-image: url("/images/bg-pattern-intro-desktop.svg"),
+      var(--bg-gradient-primary);
+
+  }
 }
 
 .logo-nav {
@@ -238,6 +247,7 @@ svg {
   color: var(--clr-neutral-100);
   background-color: transparent;
   outline: var(--clr-neutral-100);
+  border: 0;
 }
 
 
@@ -249,6 +259,12 @@ svg {
   display: grid;
   justify-content: center;
   justify-items: center;
+}
+
+@media (min-width:50em) {
+  .container-footer {
+    grid-template-columns: 20% 80%;
+  }
 }
 
 .container-part1 {
@@ -317,6 +333,14 @@ main section p {
   padding: 1rem
 }
 
+@media (min-width : 50em) {
+  .secondary-navigation {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
 .navigation {
   display: none;
 }
@@ -338,6 +362,10 @@ main section p {
 
   .navigation .dropdown-content {
     display: none;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: grid;
   }
 }
 
