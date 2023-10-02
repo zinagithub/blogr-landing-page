@@ -103,7 +103,7 @@ svg {
 .grid-container {
 
   display: grid;
-  row-gap: 2rem;
+  row-gap: 1rem;
 }
 
 .even-columns {
@@ -124,12 +124,15 @@ svg {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
   }
+
   .part1-img {
     grid-column-start: 2;
   }
+
   .part1-para {
-    grid-column-start : 1;
+    grid-column-start: 1;
   }
+
   .mobile-img {
     display: none;
   }
@@ -166,7 +169,7 @@ svg {
 
 .heading-container {
   color: var(--clr-neutral-100);
-  padding: 3rem;
+  padding: 1rem;
   display: grid;
   background-image: url("/images/bg-pattern-intro-mobile.svg"),
     var(--bg-gradient-primary);
@@ -189,7 +192,7 @@ svg {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem;
+  padding: 0.5rem;
 }
 
 .h1-heading {
@@ -209,6 +212,7 @@ svg {
 
 .buttons-group {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   justify-items: center;
   padding-bottom: 2rem;
@@ -248,13 +252,15 @@ main {
 .container-footer {
   display: grid;
   justify-content: center;
-  align-items: center;
+  /*align-items: center;*/
 }
 
 @media (min-width:50em) {
   .container-footer {
     grid-template-columns: 20% 80%;
   }
+
+  .container-footer a img {}
 }
 
 .container-part1 {
@@ -338,6 +344,9 @@ main section p {
   display: none;
 }
 
+/*.hamburger a:hover {
+  background-color: red;
+}*/
 
 @media (min-width : 50em) {
 
@@ -349,6 +358,7 @@ main section p {
   .nav,
   .group-but {
     display: flex;
+    flex-direction: row !important;
   }
 
 }
@@ -359,8 +369,15 @@ main section p {
 .navbar {
   overflow: hidden;
   display: flex;
+  flex-direction: row !important;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (max-width : 800px) {
+  /*.navbar {
+    flex-direction: column !important;
+  }*/
 }
 
 /* Navigation links */
@@ -395,6 +412,7 @@ main section p {
 .navbar a:hover,
 .subnav:hover .subnavbtn {
   background-color: inherit;
+  border-bottom-left-radius: 1rem;
 }
 
 /* Style the subnav content - positioned absolute */
@@ -402,7 +420,9 @@ main section p {
   display: none;
   position: absolute;
   background-color: var(--clr-neutral-900);
+  opacity: 0.9;
   width: 20%;
+  border-bottom-left-radius: 1rem;
   z-index: 1;
 }
 
