@@ -182,7 +182,7 @@ svg {
   .heading-container {
     background-image: url("/images/bg-pattern-intro-desktop.svg"),
       var(--bg-gradient-primary);
-
+    padding: 2rem;
   }
 }
 
